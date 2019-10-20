@@ -9,16 +9,16 @@ import (
 var database Database
 
 type Database struct {
-	Connect *sql.DB
+	Conn *sql.DB
 }
 
 func (db *Database) Init() {
 	var err error
-	db.Connect, err = sql.Open("sqlite3", config.DatabaseFileName)
+	db.Conn, err = sql.Open("sqlite3", config.DatabaseFileName)
 	if err != nil {
 		panic(err)
 	}
-	_, err = db.Connect.Exec(`
+	_, err = db.Conn.Exec(`
 		create table if not exists log (
             id integer primary key autoincrement,
             time datetime,
