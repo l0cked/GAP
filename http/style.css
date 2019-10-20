@@ -1,0 +1,172 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* end reset.css */
+body {
+    font-family: monospace;
+    background: #272822;
+}
+
+.status {
+    padding: 10px;
+    display: flex;
+    color: #333;
+    font-size: 12px;
+}
+
+.status div {
+    margin-right: 15px;
+    padding: 7px 15px 6px;
+    border: 1px dashed #272822;
+}
+
+.status.online .status-users {
+    background: #4caf50;
+}
+
+.status.online .status-messages {
+    background: #ffe082;
+}
+
+.status-users {
+    background: #f44336;
+}
+
+.status-messages {
+    background: #f44336;
+}
+
+.status-text {
+    color: #f5f5f5;
+}
+
+.controls {
+    padding: 10px;
+    display: flex;
+}
+
+.controls button {
+    font-family: monospace;
+    color: #333;
+    background: #f5f5f5;
+    padding: 7px 15px 6px;
+    border: 1px dashed #272822;
+    outline: 0;
+    min-width: 120px;
+    margin-right: 15px;
+    transition: all .1s;
+}
+
+.controls button:hover {
+    background: #ccc;
+}
+
+.controls button:active {
+    background: #aaa;
+}
+
+table {
+    position: fixed;
+    bottom: 0;
+    display: inline-block;
+    margin: 10px;
+    border: 1px dashed #272822;
+    background: #f5f5f5;
+}
+
+table thead {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: #ccc;
+    display: flex;
+}
+
+table tbody {
+    margin-top: 21px;
+    display: block;
+    max-height: 150px;
+    min-width: 700px;
+    overflow-y: auto;
+}
+
+table tbody::-webkit-scrollbar {
+    width: 12px;
+}
+
+table tbody::-webkit-scrollbar-thumb {
+    background: #ccc;
+}
+
+table th, table td {
+    min-width: 80px;
+    max-width: 500px;
+    text-align: left;
+    padding: 5px 10px 3px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    border-right: 1px dashed #ccc;
+    box-sizing: border-box;
+}
+
+table th:last-child, table td:last-child {
+    border: 0;
+}
+
+table th {
+    border-color: #f5f5f5;
+}
+
+/*# sourceMappingURL=style.css.map */
